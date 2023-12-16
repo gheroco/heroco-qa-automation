@@ -52,7 +52,6 @@ class Page:
         self.driver.get(self.base_url)
         self.home_page_button = self.driver.find_element(By.CLASS_NAME, 'gap-2')
         self.click_to_element(self.home_page_button)
-        print(self.home_page_button)
 
     def close_browser(self):
         self.driver.close()
