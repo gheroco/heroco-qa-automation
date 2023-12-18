@@ -7,8 +7,12 @@ from page_class import Page
 import time
 
 class ApplyNow(Page):
-    
+    '''
+        This class is inherited from Page class and contains methods related to Apply Now tab
+    '''
     def fill_form(self, name, email, phone):
+        #Used to fill out "Apply Now" form using given data
+        
         name_element = self.find_element_by_xpath(Xpaths.name)
         self.click_to_element(name_element)
         self.input_text(name_element, name)

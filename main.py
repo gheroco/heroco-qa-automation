@@ -5,6 +5,8 @@ from apply_now import ApplyNow
 from career_paths import CareerPaths
 import time
 
+#Initialize a driver and necessary urls
+
 driver = webdriver.Chrome()
 site_base_url = "https://heroco.am"
 apply_now_url = "https://heroco.am/#apply"
