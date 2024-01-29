@@ -38,3 +38,10 @@ class Xpaths(StrEnum):
     devops_course = '//*[@id="__next"]/main/div/section[2]/div[2]/div[1]/div[12]/a'
     python = '//*[@id="__next"]/main/div/section[2]/div[2]/div[1]/div[13]/a'
     manual_qa = '//*[@id="__next"]/main/div/section[2]/div[2]/div[1]/div[14]/a'
+
+    #About page
+    karo = '//*[@id="__next"]/main/div/section[3]/div[2]/div[1]/div/div/a/img'
+    smbat = '//*[@id="__next"]/main/div/section[3]/div[2]/div[2]/div/div/a/img'
+    vahe = '//*[@id="__next"]/main/div/section[3]/div[2]/div[3]/div/div/a/img'
+    georgi = '//*[@id="__next"]/main/div/section[3]/div[2]/div[4]/div/div/a/img'
+    vardges = '//*[@id="__next"]/main/div/section[3]/div[2]/div[5]/div/div/a/img'
