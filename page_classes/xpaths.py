@@ -16,11 +16,25 @@ class Xpaths(StrEnum):
     connect_button = '//*[@id="__next"]/main/div/div[2]/section/div[1]/div[2]/form/button'
 
     # Career Paths page
-    front_end = '//*[@id="__next"]/main/div/section[1]/div[2]/div[1]/a/div/div/div/p[1]'
+    front_end = '//*[@id="__next"]/main/div/section[1]/div[2]/div[1]/a/div/div/div/p[2]'
     back_end = '//*[@id="__next"]/main/div/section[1]/div[2]/div[2]/a/div/div/div/p[1]'
     devops = '//*[@id="__next"]/main/div/section[1]/div[2]/div[3]/a/div/div/div/p[1]'
     data_science = '//*[@id="__next"]/main/div/section[1]/div[2]/div[4]/a/div/div/div/p[1]'
     android = '//*[@id="__next"]/main/div/section[1]/div[2]/div[5]/a/div/div/div/p[1]'
+    front_end_cs = '//*[@id="__next"]/main/section[1]/div[2]/div/div/div[1]/div/a'
+    front_end_html = '//*[@id="__next"]/main/section[1]/div[2]/div/div/div[2]/div/a/div/h3'
+    front_end_js = '//*[@id="__next"]/main/section[1]/div[2]/div/div/div[3]/div/a'
+    front_end_react = '//*[@id="__next"]/main/section[1]/div[2]/div/div/div[4]/div/a/div/h3'
+    success_message = '//*[@id="__next"]/main/section/div/div/div[2]'
+
+    #Apply now under Career Paths page
+    name_career_paths = '//*[@id="__next"]/main/section[2]/div[1]/div[2]/form/label[1]/input'
+    email_career_paths = '//*[@id="__next"]/main/section[2]/div[1]/div[2]/form/label[2]/input'
+    phone_career_paths = '//*[@id="__next"]/main/section[2]/div[1]/div[2]/form/label[3]/input'
+    career_career_paths = '//*[@id="select-course-frontend_path"]/div/div[1]/div[2]'
+    career_value_career_paths = '//*[@id="react-select-select-course-frontend_path-listbox"]'
+    connect_button_career_paths = '//*[@id="__next"]/main/section[2]/div[1]/div[2]/form/button'
+
 
     # Courses page
     html_css = '//*[@id="__next"]/main/div/section[2]/div[2]/div[1]/div[1]/a'
