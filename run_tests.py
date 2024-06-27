@@ -7,9 +7,8 @@ import os
 current_dir = os.path.dirname(os.path.abspath(__file__))
 test_cases_dir = os.path.join(current_dir, 'test_cases')
 career_paths_dir = os.path.join(test_cases_dir, 'career_paths')
-print(os.listdir('/Users/shharutyunyan/kube/heroco-qa-automation/heroco-qa-automation/test_cases/career_paths'))
 test_files = [os.path.join(career_paths_dir, f) for f in os.listdir(career_paths_dir) if f.endswith('.py')]
-print(test_files)
+
 # Define the function to run a test
 def run_test(test_file):
     try:

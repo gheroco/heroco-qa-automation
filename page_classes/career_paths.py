@@ -76,8 +76,37 @@ class CareerPaths(Page):
         self.wait_until_visible(Xpaths.front_end_react)
         self.click_to_element(front_end_react_element)
 
-    def fill_form(self, name, email, phone):
+    def click_back_end_cs(self):
+        back_end_cs_element = self.find_element_by_xpath(Xpaths.back_end_cs)
+        actions = ActionChains(self.driver)
+        actions.move_to_element(back_end_cs_element).perform()
+        self.wait_until_visible(Xpaths.back_end_cs)
+        self.click_to_element(back_end_cs_element)
+
+    def click_back_end_js(self):
+        back_end_js_element = self.find_element_by_xpath(Xpaths.back_end_js)
+        actions = ActionChains(self.driver)
+        actions.move_to_element(back_end_js_element).perform()
+        self.wait_until_visible(Xpaths.back_end_js)
+        self.click_to_element(back_end_js_element)
+
+    def click_back_end_databases(self):
+        back_end_databases_element = self.find_element_by_xpath(Xpaths.back_end_databases)
+        actions = ActionChains(self.driver)
+        actions.move_to_element(back_end_databases_element).perform()
+        self.wait_until_visible(Xpaths.back_end_databases)
+        self.click_to_element(back_end_databases_element)
+    
+    def click_back_end_nodejs(self):
+        back_end_nodejs_element = self.find_element_by_xpath(Xpaths.back_end_nodejs)
+        actions = ActionChains(self.driver)
+        actions.move_to_element(back_end_nodejs_element).perform()
+        self.wait_until_visible(Xpaths.back_end_nodejs)
+        self.click_to_element(back_end_nodejs_element)
+
+    def fill_form_front_end(self, name, email, phone):
         #Used to fill out "Apply Now" form using given data
+
         name_element = self.find_element_by_xpath(Xpaths.name_career_paths)
         actions = ActionChains(self.driver)
         actions.move_to_element(name_element).perform()
@@ -90,9 +119,31 @@ class CareerPaths(Page):
         phone_element = self.find_element_by_xpath(Xpaths.phone_career_paths)
         self.click_to_element(phone_element)
         self.input_text(phone_element, phone)
-        career_element = self.find_element_by_xpath(Xpaths.career_career_paths)
+        career_element = self.find_element_by_xpath(Xpaths.career_career_paths_front_end)
         self.click_to_element(career_element)
-        value_element = self.find_element_by_xpath(Xpaths.career_value_career_paths)
+        value_element = self.find_element_by_xpath(Xpaths.career_value_career_paths_front_end)
+        self.click_to_element(value_element)
+        connect_element = self.find_element_by_xpath(Xpaths.connect_button_career_paths)
+        self.click_to_element(connect_element)
+
+    def fill_form_back_end(self, name, email, phone):
+        #Used to fill out "Apply Now" form using given data
+
+        name_element = self.find_element_by_xpath(Xpaths.name_career_paths)
+        actions = ActionChains(self.driver)
+        actions.move_to_element(name_element).perform()
+        name_element = self.find_element_by_xpath(Xpaths.name_career_paths)
+        self.click_to_element(name_element)
+        self.input_text(name_element, name)
+        email_element = self.find_element_by_xpath(Xpaths.email_career_paths)
+        self.click_to_element(email_element)
+        self.input_text(email_element, email)
+        phone_element = self.find_element_by_xpath(Xpaths.phone_career_paths)
+        self.click_to_element(phone_element)
+        self.input_text(phone_element, phone)
+        career_element = self.find_element_by_xpath(Xpaths.career_career_paths_back_end)
+        self.click_to_element(career_element)
+        value_element = self.find_element_by_xpath(Xpaths.career_value_career_paths_back_end)
         self.click_to_element(value_element)
         connect_element = self.find_element_by_xpath(Xpaths.connect_button_career_paths)
         self.click_to_element(connect_element)

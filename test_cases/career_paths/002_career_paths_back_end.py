@@ -24,38 +24,38 @@ career_paths_url = f"{base_url}/#careerPaths"
 career_paths_page = CareerPaths(career_paths_url, driver)
 career_paths_page.open_browser()
 
-career_paths_page.click_front_end()
-assert driver.current_url == f"{base_url}/career-paths/frontend_path", "Wrong url for frontend_path"
+career_paths_page.click_back_end()
+assert driver.current_url == f"{base_url}/career-paths/backend_path", "Wrong url for backend_path"
 
 time.sleep(5)
 
-career_paths_page.click_front_end_cs()
-assert driver.current_url == f"{base_url}/courses/cs", "Wrong url for front end Computer Science page"
+career_paths_page.click_back_end_cs()
+assert driver.current_url == f"{base_url}/courses/cs", "Wrong url for back end Computer Science page"
 
 time.sleep(5) 
 driver.back()
 
-career_paths_page.click_front_end_html()
-assert driver.current_url == f"{base_url}/courses/htmlcss", "Wrong url for front end HTML CSS page"
+career_paths_page.click_back_end_js()
+assert driver.current_url == f"{base_url}/courses/javascript", "Wrong url for back end JavaScript page"
 
 time.sleep(5)
 driver.back()
 
-career_paths_page.click_front_end_js()
-assert driver.current_url == f"{base_url}/courses/javascript", "Wrong url for front end JavaScript page"
+career_paths_page.click_back_end_databases()
+assert driver.current_url == f"{base_url}/courses/db", "Wrong url for back end Databases page"
 
 time.sleep(5)
 driver.back()
 
-career_paths_page.click_front_end_react()
-assert driver.current_url == f"{base_url}/courses/reactjs", "Wrong url for front end React page"
+career_paths_page.click_back_end_nodejs()
+assert driver.current_url == f"{base_url}/courses/nodejs", "Wrong url for back end Node JS page"
 
 time.sleep(5)
 driver.back()
 
 common = Common_class()
 mail = f'{common.get_random_string(8)}@test.com'
-career_paths_page.fill_form_front_end("name", mail, "+37412345678")
+career_paths_page.fill_form_back_end("name", mail, "+37412345678")
 
 time.sleep(5)
 assert career_paths_page.get_success_message() == "Thank you for your application!", "Wrong success message upon apply process" 
