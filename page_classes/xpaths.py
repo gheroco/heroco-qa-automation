@@ -29,6 +29,9 @@ class Xpaths(StrEnum):
     back_end_js = '//*[@id="__next"]/main/section[1]/div[2]/div/div/div[2]/div/a/p[2]'
     back_end_databases = '//*[@id="__next"]/main/section[1]/div[2]/div/div/div[3]/div/a/p[2]'
     back_end_nodejs = '//*[@id="__next"]/main/section[1]/div[2]/div/div/div[4]/div/a/p[2]'
+    devops_cs = '//*[@id="__next"]/main/section[1]/div[2]/div/div/div[1]/div/a/p[2]'
+    devops_python = '//*[@id="__next"]/main/section[1]/div[2]/div/div/div[2]/div/a/p[2]'
+    devops_devops = '//*[@id="__next"]/main/section[1]/div[2]/div/div/div[3]/div/a/p[2]'
     success_message = '//*[@id="__next"]/main/section/div/div/div[2]'
 
     #Apply now under Career Paths page
@@ -37,14 +40,18 @@ class Xpaths(StrEnum):
     phone_career_paths = '//*[@id="__next"]/main/section[2]/div[1]/div[2]/form/label[3]/input'
     connect_button_career_paths = '//*[@id="__next"]/main/section[2]/div[1]/div[2]/form/button'
 
-    #Apply now under Career Parths Front End page
+    #Apply now under Career Paths Front End page
     career_career_paths_front_end = '//*[@id="select-course-frontend_path"]/div/div[1]/div[2]'
     career_value_career_paths_front_end = '//*[@id="react-select-select-course-frontend_path-listbox"]'
     
-    #Apply now under Career Parths Back End page
+    #Apply now under Career Paths Back End page
     career_career_paths_back_end = '//*[@id="select-course-backend_path"]/div/div[1]/div[2]'
     career_value_career_paths_back_end = '//*[@id="react-select-select-course-backend_path-listbox"]'
 
+    #Apply now under Career Paths DevOps page
+    career_career_paths_devops = '//*[@id="select-course-devops_path"]/div/div[1]/div[1]'
+    career_value_career_paths_devops = '//*[@id="react-select-select-course-devops_path-listbox"]'
+    
     # Courses page
     html_css = '//*[@id="__next"]/main/div/section[2]/div[2]/div[1]/div[1]/a'
     javascript = '//*[@id="__next"]/main/div/section[2]/div[2]/div[1]/div[2]/a'

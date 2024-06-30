@@ -104,6 +104,27 @@ class CareerPaths(Page):
         self.wait_until_visible(Xpaths.back_end_nodejs)
         self.click_to_element(back_end_nodejs_element)
 
+    def click_devops_cs(self):
+        devops_cs_element = self.find_element_by_xpath(Xpaths.devops_cs)
+        actions = ActionChains(self.driver)
+        actions.move_to_element(devops_cs_element).perform()
+        self.wait_until_visible(Xpaths.devops_cs)
+        self.click_to_element(devops_cs_element)
+    
+    def click_devops_python(self):
+        devops_python_element = self.find_element_by_xpath(Xpaths.devops_python)
+        actions = ActionChains(self.driver)
+        actions.move_to_element(devops_python_element).perform()
+        self.wait_until_visible(Xpaths.devops_python)
+        self.click_to_element(devops_python_element)
+    
+    def click_devops_devops(self):
+        devops_devops_element = self.find_element_by_xpath(Xpaths.devops_devops)
+        actions = ActionChains(self.driver)
+        actions.move_to_element(devops_devops_element).perform()
+        self.wait_until_visible(Xpaths.devops_devops)
+        self.click_to_element(devops_devops_element)
+
     def fill_form_front_end(self, name, email, phone):
         #Used to fill out "Apply Now" form using given data
 
@@ -144,6 +165,28 @@ class CareerPaths(Page):
         career_element = self.find_element_by_xpath(Xpaths.career_career_paths_back_end)
         self.click_to_element(career_element)
         value_element = self.find_element_by_xpath(Xpaths.career_value_career_paths_back_end)
+        self.click_to_element(value_element)
+        connect_element = self.find_element_by_xpath(Xpaths.connect_button_career_paths)
+        self.click_to_element(connect_element)
+    
+    def fill_form_devops(self, name, email, phone):
+        #Used to fill out "Apply Now" form using given data
+
+        name_element = self.find_element_by_xpath(Xpaths.name_career_paths)
+        actions = ActionChains(self.driver)
+        actions.move_to_element(name_element).perform()
+        name_element = self.find_element_by_xpath(Xpaths.name_career_paths)
+        self.click_to_element(name_element)
+        self.input_text(name_element, name)
+        email_element = self.find_element_by_xpath(Xpaths.email_career_paths)
+        self.click_to_element(email_element)
+        self.input_text(email_element, email)
+        phone_element = self.find_element_by_xpath(Xpaths.phone_career_paths)
+        self.click_to_element(phone_element)
+        self.input_text(phone_element, phone)
+        career_element = self.find_element_by_xpath(Xpaths.career_career_paths_devops)
+        self.click_to_element(career_element)
+        value_element = self.find_element_by_xpath(Xpaths.career_value_career_paths_devops)
         self.click_to_element(value_element)
         connect_element = self.find_element_by_xpath(Xpaths.connect_button_career_paths)
         self.click_to_element(connect_element)
